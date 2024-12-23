@@ -82,22 +82,6 @@ int main(){
 			        }
 				break;
 			} 
-			case 5:{
-				for (int i=0 ; i < n-1 ; i++){
-					for(int j=0; j< n-i-1 ; j++){
-						if (menu[j].price >menu[j+1].price){
-							struct Dish temp = menu[j];
-							menu[j] = menu[j+1];
-							menu[j+1]=temp; 
-						}
-					}
-				} 
-				printf("Menu sau khi sap xep la: \n");
-				for(int i=0; i< n; i++){
-				    printf("%d. %s: %.lf \n", menu[i].id, menu[i].name, menu[i].price);
-			        }
-				break;
-			}
 			case 6:{
 				char mon[50];
 				int check=0; 
